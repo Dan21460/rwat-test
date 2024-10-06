@@ -1,0 +1,58 @@
+/* Daniel Wu C21460524 */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+
+.game-container {
+    text-align: center;
+}
+
+
+#game-board {
+    display: flex;               
+    flex-wrap: wrap;             
+    width: 350px;                
+    margin-top: 20px;
+    justify-content: center;   
+}
+
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+}
+
+
+.empty-tile {
+    background-color: white;
+    cursor: default;
+}
+
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+
+.tile:hover {
+    border: 2px solid red;  
+}
+
+.tile:hover {
+    transform: scale(1.25); 
+}
+
+
+

@@ -1,0 +1,47 @@
+<!-- Daniel Wu C21460524 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2</title>
+    <link rel="stylesheet" href="style_lab2.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Lab 2 - Sliding Puzzle Game</h1>
+
+        <!-- Start and continue Prompt -->
+        <div id="start-screen" class="start-screen">
+            <button id="start-new-game">Start New Game</button>
+            <button id="continue-game" style="display: none;">Continue Previous Game</button>
+        </div>
+
+        <!-- Setting the Difficulty -->
+        <div id="game-settings" class="game-settings" style="display: none;">
+            <label for="complexity">Select Difficulty Level:</label>
+            <input type="number" id="Difficulty" name="Difficulty" min="2" max="5" value="3"> <!-- 2 for 2 tiles moved 5 for 5 tiles to be moved-->
+            <button id="start-game">Start Game</button>
+        </div>
+
+        <!-- Puzzle Board -->
+        <div id="game-board" class="game-board" style="display: none;">
+            <div class="tile" id="tile-1" draggable="true"></div>
+            <div class="tile" id="tile-2" draggable="true"></div>
+            <div class="tile" id="tile-3" draggable="true"></div>
+            <div class="tile" id="tile-4" draggable="true"></div>
+            <div class="tile" id="tile-5" draggable="true"></div>
+            <div class="tile" id="tile-6" draggable="true"></div>
+            <div class="tile" id="tile-7" draggable="true"></div>
+            <div class="tile" id="tile-8" draggable="true"></div>
+            <div class="tile empty-tile" id="tile-9" draggable="true"></div>
+        </div>
+
+        <!-- Save Game Button -->
+        <button id="save-game" style="display: none;">Save Game</button>
+    </div>
+
+    <script src="main_lab2.js"></script>
+</body>
+</html>
