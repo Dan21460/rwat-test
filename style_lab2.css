@@ -55,4 +55,47 @@ button {
 }
 
 
+@media print 
+{
+
+    body {
+
+        background-color: white; 
+
+    }
+
+   
+    button { 
+
+        display: none;
+
+    }
+
+    
+    #game-board {
+
+        border: 2px solid red; 
+
+    }
+
+
+    .tile {
+
+        border: 1px solid black;
+        background-color: #f0f0f0; 
+
+    }
+
+    
+    .game-container {
+
+        width: auto;
+        text-align: center;
+
+    }
+
+    
+}
+
+
 
