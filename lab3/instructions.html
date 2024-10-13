@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/rwat/res/images/logo.png" />
+	<link rel="stylesheet" type="text/css" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/styles/common.css" />
+	<title>BS&JS</title>
+
+	<style>
+	 #content-no-nav { background-color: lightgray; }
+	 .box { border: 1px solid black; border-radius: 0.5em; }
+	 img.content { width: 20em; }
+	 img { max-width: 100%; }
+	</style>
+    </head>
+
+    <body>
+	<header id="tudheader">
+	    <img id="leftlogo" src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/images/tudublin_logo.png" alt="TU Dublin Logo">
+	    <div id="tuddepttext">
+		<p>School of Computer Science</p>
+	    </div>
+	    <div id="titlecontainer"><div id="title">Regular Expressions, Array Methods, Currying, Generators</div></div>
+	    <img id="rightlogo" src="https://jelena-vk-itt.github.io/jvk-tudt-notes/rwat/res/images/logo.png" alt="Logo">
+	</header>
+
+	<div id="content">
+
+	    <article>
+		<h2>Assignment</h2>
+		<ul>
+		    <li>Create a file called <em>index.html</em> and a file called <em>exercises.js</em>.</li>
+		    <li>In <em>index.html</em>, create a basic HTML page using Emmet in Visual Studio Code (VSC) or in some other way. The page only needs to contain a heading (e.g. "Lab 3"). <strong>Do not modify this file further in any way.</strong></li>
+		    <li>Exercises 2, 3, 4 must be completed in order.</li>
+		    <li>Make sure that the submitted HTML and Javascript content has no syntax errors. The Javascript file should also contain comments where needed for understanding the code.</li>
+		    <li>To submit, add the files to a directory called <em>lab3</em> in your RWAT repository in GitHub.</li>
+		</ul>
+		<section class="tutorial-panel clearfix">
+		    <h2>Exercise 1: Regular expressions</h2>
+		    <p>Open a copy of this instruction file or any other HTML file in Visual Studio Code. Press <strong>Ctrl-F</strong> to open the search dialog. Click on <strong>.*</strong> to the right of the search text field, so that the matching becomes regular-expression-based (see picture).</p>
+		    <img src="images/vsc_re.png">
+		    <p>Using the VSC search field to check the correctness of your answer, write a regular expression to select each of the following:</p>
+		    <ol style="list-style-type:lower-alpha;" start="1">
+			<li>Any open tag without whitespace around the element name and without attributes (e.g. <span class="fw">&lt;div></span>)</li>
+			<li>Any close tag not containing whitespace (e.g. <span class="fw">&lt;/div></span>)</li>
+			<li>Any tag (open or close), with any contents (name attributes, whitespace)</li>
+			<li>Any double letter (e.g. 'ee' or 'tt') - for this you should use backreferencing of matched groups</li>
+			<li>A valid URL (you might have to write some URLs into the file in order to test this</li>
+			<li>A valid Javascript variable name in terms of constituent characters and their ordering (you do not have to check for keywords)</li>
+		    </ol>		    
+		</section>
+		<section class="tutorial-panel clearfix">
+		    <h2>Exercise 2: Array methods</h2>
+		    <p>Copy the following into your <em>exercises.js</em> file:</p>
+		    <pre class="code-listing">
+const STUDENT_DATA_JSON = '[' + 
+'{"name": "Annie Apple","id": "X00111111","address": "Phibsboro, D7","grades": [60, 71, 55, 53, 44, 62]},' + 
+'{"name": "Ben Bounce","id": "B00111111","address": "Rathmines, D6","grades": [44, 22, 77, 33, 41, 50]},' +
+'{"name": "Charlie Curry","id": "B00222222","address": "Phibsboro, D7","grades": [80, 88, 75, 81, 90, 77]},' +
+'{"name": "Dan Dreamer","id": "X00222222","address": "Cabra, D7","grades": [64, 55, 66, 65, 78, 62]},' +
+'{"name": "Emmy Ember","id": "X00333333","address": "Stoneybatter, D7","grades": [53, 55, 55, 52, 51, 60]},' +
+'{"name": "Fiona Falls","id": "C00111111","address": "Grangegorman, D7","grades": [90, 91, 88, 80, 81, 97]},' +
+'{"name": "Georgina Gull","id": "C00222222","address": "City Centre, D1","grades": [76, 67, 63, 71, 55, 82]},' +
+'{"name": "Harry Hops","id": "C00333333","address": "Cabra, D7","grades": [50, 33, 55, 11, 42, 61]},' +
+'{"name": "Iris Indie","id": "X00444444","address": "Tallaght, D24","grades": [61, 71, 58, 70, 65, 67]},' +
+'{"name": "Jack Jobs","id": "C00444444","address": "Phibsboro, D7","grades": [60, 71, 55, 53, 44, 62]},' +
+'{"name": "Kat Kid","id": "C00555555","address": "Grangegorman, D7","grades": [41, 41, 50, 48, 55, 44]},' +
+'{"name": "Lula Lock","id": "C00666666","address": "Cabra, D7","grades": [77, 80, 85, 80, 78, 81]}' + 
+']';</pre>
+		    <p><strong>Without using any loops or accessing individual student entries</strong>, write some Javascript code to do each of the following:</p>
+		    <ol style="list-style-type:lower-alpha;" start="7">
+			<li>Prepare a list of ids, separated by commas, and display them on the html page, with a suitable heading</li>
+			<li>Prepare a new list of students and store it as a Javascript array. The entries should differ from the existing ones as follows:
+			    <ul>
+				<li>instead of the 'name' field, there should be separate fields for name and surname</li>
+				<li>instead of the 'address' field, there should be a 'town' field and a 'postcode' field, the latter holding only the number (e.g. 7 or 24)</li>
+				<li>the average grade</li>
+				<li>an overall result category indicator, calculated as follows based on the average grade:
+				    <ul>
+					<li>P: average &ge; 40</li>
+					<li>F: average &lt; 40</li>
+					<li>A: average &ge; 40 and the average is best in the class</li>
+				    </ul>
+				</li>
+			    </ul>
+			    and display it on the HTML page in a table with suitable headings
+			</li>
+		    </ol>
+		    <p>Working with the new list:</p>
+		    <ol style="list-style-type:lower-alpha;" start="9">
+			<li>Display the name, surname, id and the result category indicator in a table on the HTML page, with suitable headings</li>
+			<li>Find out if any students have failed and save the result as a boolean</li>
+			<li>Display a similar list, including only the students that have failed, with a suitable heading (use <span class="fw">filter</span>)</li>
+			<li>Display the class average percentage, with a suitable heading (use <span class="fw">reduce</span>)</li>
+		    </ol>		    
+		    
+		</section>
+		<section class="tutorial-panel clearfix">
+		    <h2>Exercise 3: Function currying</h2>
+		    <p>By using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">tagged templates</a> (on the linked page, search for the example that contains the string 't1Closure' and model your code on it), produce three templates for messages that will be sent to the students:</p>
+		    <ul>
+			<li>"Dear &lt;name>, your average result for the semester is &lt;percentage>. Congratulations on your progression to the next semester!"</li>
+			<li>"Dear &lt;name>, your average result for the semester is &lt;percentage>. Unfortunately, you have not passed and will have to repeat some exams."</li>
+			<li>"Dear &lt;name>, your average result for the semester is &lt;percentage>. Congratulations, you have won the Best in Class award!</li>
+		    </ul>
+		    <p>The items in angular brackets should be dynamically insertable into the messages from the student data array.</p>
+		    <p>Using the template and without using any loops, display messages for all the students on the HTML page (you could use <span class="fw">reduce</span> to build the entire list of messages in a single string)</p>
+		</section>
+		<section class="tutorial-panel clearfix">
+		    <h2>Exercise 4: Generators</h2>
+		    <p>Write a generator that goes on infinitely. Each value it yields should be a message saying "Hello &lt;name>, welcome to the new semester!", using the names of the students from the list in rotation. It should apply a random delay between 0 and 3 seconds in yielding the strings.</p>
+		    <p>Write some code that calls the generator and displays the messages as they arrive on the HTML page. Each new message should overwrite the previous one.</p>
+		</section>
+	    </article>
+	</div>
+    </body>
+</html>

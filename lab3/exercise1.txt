@@ -1,0 +1,24 @@
+1. <[a-zA-Z]+>
+< matches the opening angle bracket.
+[a-zA-Z]+ matches one or more alphabetic characters
+> matches the closing angle bracket.
+
+2. </[a-zA-Z]+>
+same as above but / is added in 
+
+3. <[^>]+>
+matches one or more characters that are not a closing angle bracket
+
+4. (\w)\1
+captures any letter or digit
+/1 ensures next character is the same as the previous one
+
+5. https?:\/\/[^\s/$.?#].[^\s]*
+https? maches with http or https
+:\/\/ matches with ://
+[^\s/$.?#] matches any character except whitespace and the special URL characters 
+.[^\s]* matches the domain part of the URL
+
+6. [a-zA-Z_$][a-zA-Z0-9_$]*
+[a-zA-Z_$] matches the first character, which must be a letter, underscore, or dollar sign
+[a-zA-Z0-9_$]* matches zero or more characters that can be letters, digits, underscores, or dollar signs.
