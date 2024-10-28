@@ -1,0 +1,39 @@
+<!-- 
+ 
+Daniel Wu
+C21460524
+Lab 5
+ 
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 5 - Users</title>
+</head>
+<body>
+  <h1>Users Page</h1>
+
+  <div id="authContent" style="display: none;">
+    <h2>Users List</h2>
+    <div id="userList"></div>
+
+    <h2>Add New User</h2>
+    <input type="text" id="userName" placeholder="User Name">
+    <button id="addUserButton" onclick="addUser()">Add User</button>
+    
+    <button id="signOutButton" onclick="signOutUser()">Sign Out</button>
+  </div>
+
+  <div id="nonAuthContent" style="display: none;">
+    <p>You are not authorized to view this page. Please <a href="signIn.html">Sign In</a> or <a href="index.html">Sign Up</a>.</p>
+  </div>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
