@@ -1,0 +1,53 @@
+<!-- 
+ 
+ Daniel Wu
+ C21460524
+ 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rwat - CA1</title>
+  <script type="module" crossorigin src="/assets/index-C7c7chz9.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CTl8SzWZ.css">
+</head>
+
+<body>
+  <div id="app">
+    <!-- Start Screen -->
+    <div id="start-screen">
+      <h1>CA1 - Box and Arrow Diagram Editor</h1>
+      <button id="start-new">Start New Diagram</button>
+      <button id="load-diagram">Load Diagram</button>
+    </div>
+
+    <!-- Editing Screen -->
+    <div id="editor-screen" style="display: none;">
+      <!-- Toolbar for draggable items -->
+      <div id="toolbar">
+        <div class="toolbar-item" draggable="true" data-type="box">Box</div>
+        <div class="toolbar-item" draggable="true" data-type="arrow">Arrow</div>
+      
+      </div>
+
+    <!-- Save Diagram or return to start -->
+    <div id="grid-container"></div>
+      <button id="save-diagram">Save Diagram</button>
+      <button id="return-start-editor">Return to Starting Menu</button>
+    </div>
+
+    <!-- Load Screen for displaying saved diagrams -->
+    <div id="load-screen" style="display: none;">
+      <h2>Select a Diagram to Load</h2>
+      <div id="diagram-list"></div> <!-- Container for loading saved diagrams -->
+      <button id="return-start-load">Return to Start</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
