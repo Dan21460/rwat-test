@@ -1,0 +1,104 @@
+{
+    "locations": [
+        {
+            "id": 0,
+            "name": "Tesla Model S",
+            "city": "Miami",
+            "state": "FL",
+            "photo": "https://hips.hearstapps.com/hmg-prod/images/2025-tesla-model-s-1-672d42e172407.jpg?crop=0.465xw:0.466xh;0.285xw,0.361xh&resize=2048:*",
+            "availableUnits": 4,
+            "wifi": true,
+            "laundry": true
+        },
+        {
+            "id": 1,
+            "name": "Ford Mustang",
+            "city": "Houston",
+            "state": "TX",
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWStfCRJMd-WPU-37x_dErUeFdeaaM_jrTMg&s",
+            "availableUnits": 0,
+            "wifi": false,
+            "laundry": true
+        },
+        {
+            "id": 2,
+            "name": "Chevrolet Camaro",
+            "city": "Colarado Springs",
+            "state": "Colarado",
+            "photo": "https://www.motortrend.com/uploads/sites/5/2017/06/2018-Chevrolet-Camaro-ZL1-1LE-front-three-quarter-in-motion-04-e1498503636653.jpg?w=768&width=768&q=75&format=webp",
+            "availableUnits": 1,
+            "wifi": false,
+            "laundry": false
+        },
+        {
+            "id": 3,
+            "name": "BMW 3 Series",
+            "city": "Arlington",
+            "state": "VI",
+            "photo": "https://di-uploads-pod20.dealerinspire.com/sewickleybmw/uploads/2022/06/BMW-3-Series-.jpg",
+            "availableUnits": 1,
+            "wifi": true,
+            "laundry": false
+        },
+        {
+            "id": 4,
+            "name": "Audi Q5",
+            "city": "Chicago",
+            "state": "IL",
+            "photo": "https://hips.hearstapps.com/hmg-prod/images/2025-audi-q5-112-66d1c3a5d34fd.jpg?crop=0.611xw:0.456xh;0.147xw,0.401xh&resize=1200:*",
+            "availableUnits": 1,
+            "wifi": true,
+            "laundry": false
+        },
+        {
+            "id": 5,
+            "name": "Toyota Corolla",
+            "city": "Oakland",
+            "state": "CA",
+            "photo": "https://scene7.toyota.eu/is/image/toyotaeurope/cors0001a_web_2023:Medium-Landscape?ts=1706198772211&resMode=sharp2&op_usm=1.75,0.3,2,0",
+            "availableUnits": 2,
+            "wifi": true,
+            "laundry": true
+        },
+        {
+            "id": 6,
+            "name": "Honda Civic",
+            "city": "Los Angeles",
+            "state": "CA",
+            "photo": "https://media.ed.edmunds-media.com/honda/civic/2025/oem/2025_honda_civic_sedan_si_fq_oem_1_1280.jpg",
+            "availableUnits": 5,
+            "wifi": true,
+            "laundry": true
+        },
+        {
+            "id": 7,
+            "name": "Jeep Wrangler",
+            "city": "Detroit",
+            "state": "MI",
+            "photo": "https://media.ed.edmunds-media.com/jeep/wrangler/2024/oem/2024_jeep_wrangler_convertible-suv_rubicon-392-final-edition_fq_oem_1_600.jpg",
+            "availableUnits": 2,
+            "wifi": true,
+            "laundry": true
+        },
+        {
+            "id": 8,
+            "name": "Porsche 911",
+            "city": "New York",
+            "state": "NY",
+            "photo": "https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/teaser_700x395/dam/pnr/2024/Products/992-II/0840_nevada_coupe_u-crane_AKOS0607_edit_V03-sky.jpg/jcr:content/0840_nevada_coupe_u-crane_AKOS0607_edit_V03-sky.jpg",
+            "availableUnits": 10,
+            "wifi": false,
+            "laundry": false
+        },
+        {
+            "id": 9,
+            "name": "Mercedes-Benz C-Class",
+            "city": "Atlanta",
+            "state": "GA",
+            "photo": "https://www.topgear.com/sites/default/files/2021/11/Mercedes_C300D_0000.jpg",
+            "availableUnits": 6,
+            "wifi": true,
+            "laundry": true
+        }
+    ]
+}
